@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1D4FB0EA-2512-4973-BCBA-D07E118703B0}</ProjectGuid>
+    <ProjectGuid>{B62DE2E7-9F38-45FF-8EAC-9BB4CF16D11D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FrogApp\FrogApp.csproj">
-      <Project>{9C09E130-A8F9-425E-A594-714057013794}</Project>
+      <Project>{3FAAA6A9-0815-4B80-9BD5-4F092DB2D142}</Project>
       <Name>FrogApp</Name>
     </ProjectReference>
   </ItemGroup>
