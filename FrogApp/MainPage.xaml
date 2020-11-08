@@ -5,20 +5,68 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FrogApp.MainPage"
-             Title="Hello XAML Page"
-             >
+             BackgroundColor="#8EB9CA">
+
+    <NavigationPage.TitleView>
+        <Label
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="FillAndExpand"
+            FontSize="Title"
+            Text="Vivarium Control Panel"
+            TextColor="#5E95CB"
+            BackgroundColor="Black" />
+    </NavigationPage.TitleView>
 
     <ContentPage.Content>
-
-        <Label Text="Hello, XAML!"
-               VerticalOptions="Center"
-               HorizontalTextAlignment="Center"
-               Rotation="-15"
-               IsVisible="true"
-               FontSize="Large"
-               FontAttributes="Bold"
-               TextColor="Blue" />
-
+        <StackLayout
+            Padding="20"
+            Orientation="Vertical"
+            Spacing="50"
+            VerticalOptions="Center">
+            <Frame
+                BackgroundColor="#5E95CB"
+                CornerRadius="20"
+                WidthRequest="150"
+                HorizontalOptions="Center"
+                Padding="55">
+                <Label
+                    Text="Metrics/Status"
+                    BackgroundColor="Transparent"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"
+                    FontSize="Large" />
+            </Frame>
+            <Frame
+                BackgroundColor="#5E95CB"
+                WidthRequest="150"
+                HorizontalOptions="CenterAndExpand"
+                Padding="55"
+                CornerRadius="20">
+                <Label
+                    Text="Froglet Light"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"
+                    FontSize="Large" />
+            </Frame>
+            <Frame
+                BackgroundColor="#5E95CB"
+                WidthRequest="150"
+                HorizontalOptions="CenterAndExpand"
+                Padding="55"
+                CornerRadius="20">
+                <Label
+                    Text="Main Vivarium"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"
+                    FontSize="Large" />
+            </Frame>
+        </StackLayout>
     </ContentPage.Content>
 
     <!--<StackLayout>

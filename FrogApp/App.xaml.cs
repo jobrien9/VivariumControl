@@ -10,7 +10,10 @@ namespace FrogApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.Black
+            };
         }
 
         protected override void OnStart()

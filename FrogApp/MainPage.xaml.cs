@@ -16,20 +16,6 @@ namespace FrogApp
         public MainPage()
         {
             InitializeComponent();
-
-            Button button = new Button
-            {
-                Text = "Navigate!",
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center
-            };
-
-            button.Clicked += async (sender, args) =>
-            {
-                await Navigation.PushAsync(new Home());
-            };
-
-            Content = button;
         }
     }
 }

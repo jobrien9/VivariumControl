@@ -11,13 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
+    <Compile Update="Metrics.xaml.cs">
+      <DependentUpon>Metrics.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Home.xaml">
+    <EmbeddedResource Update="Metrics.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
