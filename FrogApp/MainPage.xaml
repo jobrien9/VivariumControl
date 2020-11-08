@@ -1,21 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="FrogApp.MainPage"
-             BackgroundColor="#8EB9CA">
-
-    <NavigationPage.TitleView>
-        <Label
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="FillAndExpand"
-            FontSize="Title"
-            Text="Vivarium Control Panel"
-            TextColor="#5E95CB"
-            BackgroundColor="Black" />
-    </NavigationPage.TitleView>
+<local:NavigableContentPage
+    xmlns:local="clr-namespace:FrogApp" xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Vivarium Control Panel"
+    x:Class="FrogApp.MainPage"
+    >
 
     <ContentPage.Content>
         <StackLayout
@@ -30,13 +22,18 @@
                 HorizontalOptions="Center"
                 Padding="55">
                 <Label
-                    Text="Metrics/Status"
                     BackgroundColor="Transparent"
                     HorizontalTextAlignment="Center"
                     HorizontalOptions="FillAndExpand"
                     VerticalTextAlignment="Center"
                     TextColor="Black"
-                    FontSize="Large" />
+                    Text="Metrics/Status"
+                    FontSize="Large">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OpenMetricsPage" />
+                    </Label.GestureRecognizers>
+                </Label>
             </Frame>
             <Frame
                 BackgroundColor="#5E95CB"
@@ -77,4 +74,4 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>-->
-</ContentPage>
+</local:NavigableContentPage>

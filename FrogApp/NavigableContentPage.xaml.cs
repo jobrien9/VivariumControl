@@ -10,9 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace FrogApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Metrics : NavigableContentPage
+    public partial class NavigableContentPage : ContentPage
     {
-        public Metrics()
+        public NavigableContentPage()
+
         {
             InitializeComponent();
         }

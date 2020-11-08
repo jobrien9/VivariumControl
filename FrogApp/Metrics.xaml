@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<local:NavigableContentPage
+    xmlns:local="clr-namespace:FrogApp" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FrogApp.Home"
-             Title="Hello XAML Page">
+             x:Class="FrogApp.Metrics"
+             Title="Metrics/Status">
     <ContentPage.Content>
 
         <Label Text="Hello, XAML!"
@@ -14,4 +15,4 @@
                FontAttributes="Bold"
                TextColor="Blue" />
     </ContentPage.Content>
-</ContentPage>
+</local:NavigableContentPage>
