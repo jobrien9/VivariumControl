@@ -6,9 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="Vivarium Control Panel"
-    x:Class="FrogApp.MainPage"
-    >
-
+    x:Class="FrogApp.MainPage">
     <ContentPage.Content>
         <StackLayout
             Padding="20"
@@ -16,11 +14,15 @@
             Spacing="50"
             VerticalOptions="Center">
             <Frame
-                BackgroundColor="#5E95CB"
+                BackgroundColor="{StaticResource FrogAppSecondary}"
                 CornerRadius="20"
                 WidthRequest="150"
                 HorizontalOptions="Center"
                 Padding="55">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Tapped="OpenMetricsPage" />
+                </Frame.GestureRecognizers>
                 <Label
                     BackgroundColor="Transparent"
                     HorizontalTextAlignment="Center"
@@ -28,15 +30,10 @@
                     VerticalTextAlignment="Center"
                     TextColor="Black"
                     Text="Metrics/Status"
-                    FontSize="Large">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="OpenMetricsPage" />
-                    </Label.GestureRecognizers>
-                </Label>
+                    FontSize="Large" />
             </Frame>
             <Frame
-                BackgroundColor="#5E95CB"
+                BackgroundColor="{StaticResource FrogAppSecondary}"
                 WidthRequest="150"
                 HorizontalOptions="CenterAndExpand"
                 Padding="55"
@@ -50,7 +47,7 @@
                     FontSize="Large" />
             </Frame>
             <Frame
-                BackgroundColor="#5E95CB"
+                BackgroundColor="{StaticResource FrogAppSecondary}"
                 WidthRequest="150"
                 HorizontalOptions="CenterAndExpand"
                 Padding="55"
@@ -65,13 +62,4 @@
             </Frame>
         </StackLayout>
     </ContentPage.Content>
-
-    <!--<StackLayout>
-        -->
-    <!-- Place new controls here -->
-    <!--
-        <Label Text="Welcome to Xamarin.Forms!"
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>-->
 </local:NavigableContentPage>

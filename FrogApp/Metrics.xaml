@@ -5,14 +5,13 @@
              x:Class="FrogApp.Metrics"
              Title="Metrics/Status">
     <ContentPage.Content>
-
-        <Label Text="Hello, XAML!"
-               VerticalOptions="Center"
-               HorizontalTextAlignment="Center"
-               Rotation="-15"
-               IsVisible="true"
-               FontSize="Large"
-               FontAttributes="Bold"
-               TextColor="Blue" />
+        <ScrollView>
+            <StackLayout
+                x:Name="MetricsStack"
+                Padding="20"
+                Orientation="Vertical"
+                Spacing="30"
+                VerticalOptions="Center" />
+        </ScrollView>
     </ContentPage.Content>
 </local:NavigableContentPage>

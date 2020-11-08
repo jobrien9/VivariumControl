@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Name="contentPageMaster"
-             BackgroundColor="#8EB9CA"
+             BackgroundColor="{StaticResource FrogAppBackground}"
              x:Class="FrogApp.NavigableContentPage">
     <NavigationPage.TitleView>
         <Label
@@ -14,7 +14,7 @@
             VerticalOptions="FillAndExpand"
             Text="{Binding Path=Title, Source={x:Reference contentPageMaster}}"
             FontSize="Title"
-            TextColor="#5E95CB"
+            TextColor="{StaticResource FrogAppSecondary}"
             BackgroundColor="Black" />
     </NavigationPage.TitleView>
 </ContentPage>
