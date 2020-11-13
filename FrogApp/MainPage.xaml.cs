@@ -25,5 +25,10 @@ namespace FrogApp
         {
             await Navigation.PushAsync(new Metrics());
         }
+
+        private async void OpenFrogletLightControl(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new FrogletControl());
+        }
     }
 }

@@ -38,6 +38,10 @@
                 HorizontalOptions="CenterAndExpand"
                 Padding="55"
                 CornerRadius="20">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OpenFrogletLightControl" />
+                </Frame.GestureRecognizers>
                 <Label
                     Text="Froglet Light"
                     HorizontalTextAlignment="Center"

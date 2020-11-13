@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:NavigableContentPage
+    xmlns:local="clr-namespace:FrogApp" xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="FrogletControlPage"
+    x:Class="FrogApp.FrogletControl"
+    Title="Froglet Light Control">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical">
+            <Label
+                Text="---"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontAttributes="Bold"
+                x:Name="OnOffLabel"
+                FontSize="Title" />
+            <Switch
+                HeightRequest="50"
+                WidthRequest="100"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsEnabled="False"
+                Toggled="ToggleFrogletLights"
+                x:Name="LightToggle"
+                IsToggled="False" />
+            <ActivityIndicator
+                x:Name="Spinner"
+                HeightRequest="50"
+                WidthRequest="50" />
+        </StackLayout>
+    </ContentPage.Content>
+</local:NavigableContentPage>

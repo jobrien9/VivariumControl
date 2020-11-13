@@ -54,5 +54,24 @@ namespace FrogApp
                 }
             }
         }
+
+        /// <summary>
+        /// Turns the froglet light on/off immediately
+        /// </summary>
+        /// <returns>Returns true if the light now On. False if now Off after this method executes</returns>
+        public static bool ToggleFrogletLight()
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var requestString = $"{App.BASE_PARTICE_URL}FrogToggle?access_token={App.PARTICLE_ACCESS_TOKEN}";
+                var result = httpClient.PostAsync(requestString, null).Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var resultAsJson = JsonConvert.DeserializeObject<ParticleResponse>(result.Content.ReadAsStringAsync().Result);
+                    return resultAsJson.ReturnValue > 0;
+                }
+            }
+            throw new Exception("FrogetLight Toggle Failed!");
+        }
     }
 }
