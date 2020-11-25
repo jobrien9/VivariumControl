@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using FrogApp.Helpers;
+using Newtonsoft.Json;
 using System;
 using System.Net.Http;
 using Xamarin.Forms;
@@ -15,6 +16,7 @@ namespace FrogApp
 
         private const string BASE_SUNRISE_URL = "https://api.sunrise-sunset.org/";
         public const string BASE_PARTICE_URL = "https://api.particle.io/v1/devices/31001c001851373237343331/";
+        public const string PARTICLE_ACCESS_TOKEN = Secrets.ACCESS_TOKEN;
 
         public App()
         {
