@@ -29,10 +29,11 @@
                 FontAttributes="Bold"
                 x:Name="OnOffLabel"
                 FontSize="Header" />
-            <Switch
+            <local:SwitchFix
+                ThumbColor="PaleGoldenrod"
                 IsVisible="False"
-                HeightRequest="50"
-                Scale="2"
+                HeightRequest="75"
+                Scale="3"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsEnabled="False"
