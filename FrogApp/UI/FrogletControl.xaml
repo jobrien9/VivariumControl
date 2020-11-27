@@ -37,8 +37,7 @@
                 VerticalOptions="CenterAndExpand"
                 IsEnabled="False"
                 Toggled="ToggleFrogletLights"
-                x:Name="LightToggle"
-                IsToggled="False" />
+                x:Name="LightToggle" />
         </StackLayout>
     </ContentPage.Content>
 </local:NavigableContentPage>
