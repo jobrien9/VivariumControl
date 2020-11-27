@@ -10,8 +10,17 @@
     Title="Froglet Light Control">
     <ContentPage.Content>
         <StackLayout
+            VerticalOptions="CenterAndExpand"
             Orientation="Vertical">
+            <ActivityIndicator
+                IsVisible="True"
+                IsRunning="True"
+                Color="Black"
+                x:Name="Spinner"
+                HeightRequest="100"
+                WidthRequest="50" />
             <Label
+                IsVisible="False"
                 Text="---"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
@@ -19,20 +28,17 @@
                 VerticalTextAlignment="Center"
                 FontAttributes="Bold"
                 x:Name="OnOffLabel"
-                FontSize="Title" />
+                FontSize="Header" />
             <Switch
+                IsVisible="False"
                 HeightRequest="50"
-                WidthRequest="100"
+                Scale="2"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 IsEnabled="False"
                 Toggled="ToggleFrogletLights"
                 x:Name="LightToggle"
                 IsToggled="False" />
-            <ActivityIndicator
-                x:Name="Spinner"
-                HeightRequest="50"
-                WidthRequest="50" />
         </StackLayout>
     </ContentPage.Content>
 </local:NavigableContentPage>

@@ -16,19 +16,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Metrics.xaml.cs">
+    <Compile Update="UI\Metrics.xaml.cs">
       <DependentUpon>Metrics.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="FrogletControl.xaml">
+    <EmbeddedResource Update="UI\FrogletControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Metrics.xaml">
+    <EmbeddedResource Update="UI\Metrics.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NavigableContentPage.xaml">
+    <EmbeddedResource Update="UI\NavigableContentPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Styles\Colors.xaml">

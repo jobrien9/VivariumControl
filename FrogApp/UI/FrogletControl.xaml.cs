@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,6 +24,11 @@ namespace FrogApp
             Device.BeginInvokeOnMainThread(() =>
             {
                 LightToggle.IsEnabled = true;
+                LightToggle.IsVisible = true;
+                OnOffLabel.IsVisible = true;
+                Spinner.IsVisible = false;
+                Spinner.IsRunning = false;
+
                 if (lightStatus.Equals(LightStatus.On))
                 {
                     //LightToggle.IsToggled = true;
@@ -37,7 +43,7 @@ namespace FrogApp
                     Spinner.IsVisible = false;
                     OnOffLabel.TextColor = (Color)Application.Current.Resources["FrogAppSecondary"];
                     OnOffLabel.Text = "Off";
-                    FrogletControlPage.BackgroundColor = Color.Black;
+                    //FrogletControlPage.BackgroundColor = Color.Black;
                 }
             });
         }
